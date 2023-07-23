@@ -6,8 +6,7 @@
     --gris-claro: #ebebeb;
     --verde: #39b54a;
 }
-
-@import "register.css";
+@import "/css/register.css";
 
 *{
     margin: 0px;
@@ -18,7 +17,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;    
-    background-color: var(--gris-claro)
+    /* background-color: var(--azul) */
    
 }
 
@@ -83,8 +82,7 @@ div .contenedor-forma-de-pago{
 header ul li{
     list-style-type: none ;
     display: none;
-    font-size: 15px;
-    /* text-align: center;         */
+    font-size: 15px;  
 }
 
 a{
@@ -217,6 +215,9 @@ footer section i{
     color: var(--celeste);
     margin-bottom: 10px;
 }
+/* .formulario{
+    border: #39b54a solid 8px;
+} */
 
 
 /* TABLET */
@@ -252,7 +253,7 @@ footer section i{
     .forma-de-pago{
         font-size: 13px;
     }
-    
+
     .main-navbar{
         display: flex;
         justify-content: space-between;
@@ -269,6 +270,7 @@ footer section i{
     header ul li a i{        
         font-size: 13px;       
     }
+    
     
     .burger-menu{
         display: none;

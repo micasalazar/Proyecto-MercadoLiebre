@@ -45,6 +45,82 @@
     <section class="banner">
         <img src="/img/img-home-banner.jpg" alt="banner">
     </section>     
+    <main>         
+        <form action="/register.html" method="get" class="formulario">
+
+            <div class="formulario-estilo">
+                <label for="na">Nombre y Apellido</label>
+                <input type="text" name="nombre" id="na" placeholder="Nombre y Apellido">
+            </div>
+
+            <div class="formulario-estilo">
+                <label for="nu">Nombre de Usuario</label>
+                <input type="text" name="usuario" id="nu" placeholder="Nombre de Usuario">
+            </div>
+
+            <div class="formulario-estilo">
+                <label for="fn">Fecha de Nacimiento</label>
+                <input type="date" name="fecha" id="fn" placeholder="Fecha de Nacimiento">
+            </div>
+
+            <div class="formulario-estilo">
+                <label for="domicilio">Domicilio</label>
+                <input type="text" name="domicilio" id="domicilio">
+            </div>
+
+            <div class="formulario-estilo">
+                <label for="comprador">Comprador</label>
+                <input type="radio" name="perfil" value="comprador" id="comprador">
+            </div>
+
+            <div class="formulario-estilo">
+                <label for="vendedor">Vendedor</label>
+                <input type="radio" name="perfil" value="vendedor" id="vendedor">
+            </div>
+
+            <div class="formulario-estilo">
+                <h4>Categoria de Interés</h4>
+                <label for="electro">Electro</label>
+                <input type="checkbox" name="categoriaDeInteres" value="electro" id="electro">
+                
+                <label for="moda">Moda</label>
+                <input type="checkbox" name="categoriaDeInteres" value="moda" id="moda">
+                
+                <label for="hogar">Hogar</label>
+                <input type="checkbox" name="categoriaDeInteres" value="hogar" id="hogar">
+                
+                <label for="jugueteria">Juguetería</label>
+                <input type="checkbox" name="categoriaDeInteres" value="jugueteria" id="jugueteria">
+
+                <label for="vidaSana">Vida Sana</label>
+                <input type="checkbox" name="categoriaDeInteres" value="vidaSana" id="vidaSana">
+                
+            </div>  
+
+            <div class="formulario-estilo">
+                <label for="fotoDeUsuario">Foto de Usuario</label>
+                <input type="file" name="fotoDeUsuario" id="fotoDeUsuario">
+            </div>
+
+            <div class="formulario-estilo">
+                <label for="contraseña">Contraseña</label>
+                <input type="password" name="password" id="contraseña">
+            </div>
+
+            <div class="formulario-estilo">
+                <label for="confirmar">Confirmar Contraseña</label>
+                <input type="password" name="confirmar" id="confirmar">
+            </div>
+
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+            <div>
+                <button type="reset">Borrar</button>
+            </div>
+
+        </form>
+    </main>    
       
     <footer>
         <section class="articulos">
