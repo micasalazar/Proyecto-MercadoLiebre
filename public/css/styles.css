@@ -1,8 +1,3 @@
-*{
-    margin: 0px;
-    padding: 0px; 
-}
-
 :root{
     --amarillo: #EAC926;
     --azul: #03264C;
@@ -12,63 +7,96 @@
     --verde: #39b54a;
 }
 
+@import "register.css";
+
+*{
+    margin: 0px;
+    padding: 0px; 
+    box-sizing: border-box;
+  
+}
+
 body{
-    font-family: 'Roboto', sans-serif;
-    /* font-size: 12px; */
+    font-family: 'Roboto', sans-serif;    
+    background-color: var(--gris-claro)
+   
 }
 
 header{
-    background-color: var(--amarillo);
+    background-color: var(--amarillo);    
+    margin: 0px;
 }
+
+.header-superior{
+    display: flex;
+    flex-wrap: wrap;   
+}
+
 .logo{
+    width: 50%;  
+    padding: 10px;    
+}
+
+.buscador{        
     width: 50%;
-    padding: 10px;
-}
-.buscador{
-    margin: 10px;
     padding: 5px;
+    display: flex;    
+    align-items: center;
+    position: relative;   
+}
+
+.input{
     background-color: var(--gris-claro);
+    border: 1px solid var(--gris-oscuro);
     color: var(--gris-oscuro);
-    /* border: solid 1px var(--gris-oscuro); */
-}
-.icono-buscador i{
-    margin-left: 10px;
-    background-color: var(--gris-claro);
-    border: solid 1px var(--gris-oscuro);
-    font-weight: bold;
-    padding: 3px;
+    padding: 5px;
+    outline: none;
     border-radius: 5px;
+    width: 100%;
+    font-size: 15px; 
+    white-space: nowrap;  /* Evita los saltos de línea */
+    overflow: hidden; /* Oculta el texto que desborda */
+    text-overflow: ellipsis; /* Muestra puntos suspensivos cuando el texto desborda */
+    
 }
+
+.icono-buscador{
+     margin-left: 0px;    
+    border: solid 1px var(--gris-oscuro);       
+    background-color: var(--gris-claro);   
+    color: var(--gris-oscuro);
+    padding: 5px;
+    border-radius: 5px;    
+}
+
+div .contenedor-forma-de-pago{
+    margin: auto;
+}
+
 .forma-de-pago{
+    color: #0f0f0f;
     text-align: center;
+    margin: 0px;
+    font-size: 13px;   
 }
 
 header ul li{
     list-style-type: none ;
+    display: none;
+    font-size: 15px;
+    /* text-align: center;         */
 }
 
 a{
     text-decoration: none;
-    color: #000;
+    color:#0f0f0f;
+       
 }
 
-h3.titulares{
-    font-size:24px;
-}
-p.precios{
-    font-size:18px;
-
-}
-p.descuentos{
-    font-size:16px;
-
-}
-h4.descripcion{
-    font-size:16px;
-}
 .burger-menu{
-    text-align:center;
+    text-align:center;   
 }
+
 .burger-menu i{
     background-color: var(--celeste);
     color: var(#fff);
@@ -77,6 +105,244 @@ h4.descripcion{
     font-size: 20px;
     border-radius: 5px;
     padding: 10px;
-    margin: 10px 0px 20px 0px ;
+    margin: 10px 0px 20px 0px ;   
+    align-items: center;
+}
+.banner img {
+    width: 100%;   
+    background-image: url('/img/img-home-banner.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    margin-bottom: 20px; /* Ajusta el margen inferior para separarlo del contenido siguiente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+main{
+    margin: auto;
+    width: 90vw;   
+}
+
+h3.titulares{
+    font-size:24px;
+    color: var(--gris-oscuro);
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.productos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+article{
+    margin-bottom:10px;    
+    background-color: #fff;
+    width: 80%;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+}
+article img{
+    width: 100%;
+}
+
+.product-info{
+    border-top: 1px solid var(--gris-claro); 
+    text-align: left;
+    width: 100%;
+    padding: 15px;
+    /* box-sizing: border-box; */
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+}
+
+div.product-info i.fa-truck {
+    color: var(--verde);
+    /* display: block; */
+    font-size: 1.2em;
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+p.precios{
+    color: #0f0f0f;
+    font-size:18px;
+    width: 30%;
+    text-align: left;
+}
+
+p.descuentos{
+    font-size:16px;
+    color: var(--verde);
+    width: 70%;
+    text-align: right;
+}
+
+h4.descripcion{
+    font-size:16px;
+    display: none;
+}
+
+footer{
+    font-size: 12px;
+    text-align: center;
+}
+
+footer section{
+    color: var(--gris-oscuro);
+    padding: 20px;
+}
+
+.articulos{
+    text-align: center;   
+}
+
+footer section i{
+    font-size: 2em;
+    color: var(--celeste);
+    margin-bottom: 10px;
+}
+
+
+/* TABLET */
+@media(min-width: 361px){
+
+    .header-superior{
+        display: flex;
+        flex-wrap:nowrap;
+        align-items: center;        
+    }   
+
+    header ul li{        
+        display: block;
+        text-align: center;        
+    }
+
+    .logo{
+        width: 30%;
+        padding: 5px;            
+    }
+
+    .buscador{        
+        width: 30%;
+        padding: 5px;         
+    } 
+    .icono-buscador{
+        margin-left: 3px; 
+        font-size: 13px; 
+    }
+    .input{
+        font-size: 13px;
+    }
+    .forma-de-pago{
+        font-size: 13px;
+    }
+    
+    .main-navbar{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;      
+    }
+    .main-navbar ul{
+        display:flex;        
+    }
+    a{
+        margin: 0px 5px;
+        font-size: 13px; 
+        letter-spacing: -1px;        
+    }
+    header ul li a i{        
+        font-size: 13px;       
+    }
+    
+    .burger-menu{
+        display: none;
+    }
+
+    .productos{
+        justify-content: space-around;
+    }
+
+    article{
+        width: 40%;        
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);    
+    }
+    div.product-info i.fa-truck {
+        
+        font-size: 1.0em;        
+        width: 25px;
+        height: 25px;        
+      }
+    p.precios{        
+        font-size:13px;        
+    }
+    p.descuentos{
+        font-size:13px;        
+    }
+
+    h4.descripcion{
+        display: block;
+    } 
+
+    h3.titulares{
+        padding: 15px 30px;
+        text-align: start;       
+    }
+
+}
+
+/* DESKTOP */
+@media(min-width: 769px){        
+    .logo{
+        width: 30%;
+    }
+    .buscador{
+        width: 30%;
+    }
+    .icono-buscador{       
+        font-size: 16px; 
+    }
+    .input{
+        font-size: 16px;
+    }
+    .forma-de-pago{
+        font-size: 16px;
+    }
+    a{       
+        font-size: 16px;
+        margin: 0px 15px; 
+          
+    }
+    header ul li a i{        
+        font-size: 16px;       
+    }
+
+    .productos{
+        justify-content: space-between;
+    }
+    article{
+        width: 20%;        
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);    
+    }
+    h3.titulares{
+        padding: 15px 0px;
+        text-align: start;       
+    }
+    
 
 }
