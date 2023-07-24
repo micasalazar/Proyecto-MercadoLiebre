@@ -9,78 +9,61 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-
-
 </head>
 <body>
     <header>
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Mercado Liebre</title>
-            <link rel="stylesheet" href="/css/styles.css">
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
-            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-        </head>
-        <body>
-            <header>
-                <div class="header-superior">
-                    <img class="logo" src="/img/logo-mercado-liebre.svg" alt="Logo Mercado Liebre">
-                    <div class="buscador">
-                        <div class="input">Buscar productos, marcas</div>        
-                        <div class="icono-buscador"><i class="fa fa-search"></i></div>
-                    </div>
-                    <div class="contenedor-forma-de-pago">
-                        <p class="forma-de-pago"> <i class="fas fa-hand-holding-usd"></i>Compra en cuotas y sin tarjetas de crédito</p>
-                    </div>           
-                </div>
-                <nav class="main-navbar">
-                    <ul>
-                        <li><a href="#">Ofertas</a></li>
-                        <li><a href="#">Tiendas Oficiales</a></li>
-                        <li><a href="#">Vender</a></li>
-                        <li><a href="#">Ayuda</a></li>                
-                    </ul>
-                    <ul>
-                        <li><a href="/register">Crea tu Cuenta <i class="far fa-id-card"></i></a>
-                        </li>
-                        <li><a href="/login">Ingresa <i class="fas fa-sign-in-alt"></i>
-                        </a></li>
-                        <li><a href="#">Mis Compras <i class="fas fa-shopping-basket"></i>
-                        </a></li>                
-                    </ul>
-                </nav>
-                <div class="burger-menu">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </header>      
-            <section class="banner">
-                <img src="/img/img-home-banner.jpg" alt="banner">
-            </section> 
-            
-            <main>         
-                <form action="/register.html" method="get" class="formulario">                 
-        
-                    <div class="formulario-estilo">
-                        <label for="nu">Nombre de Usuario</label>
-                        <input type="text" name="usuario" id="nu" placeholder="Nombre de Usuario">
-                    </div>
-        
-                    <div class="formulario-estilo">
-                        <label for="contraseña">Contraseña</label>
-                        <input type="password" name="password" id="contraseña">
-                    </div>        
-        
-                    <div>
-                        <button type="submit">Enviar</button>
-                    </div>                    
-                </form>
-            </main>    
-    
+        <div class="header-superior">
+            <img class="logo" src="/img/logo-mercado-liebre.svg" alt="Logo Mercado Liebre">
+            <div class="buscador">
+                <div class="input">Buscar productos, marcas</div>        
+                <div class="icono-buscador"><i class="fa fa-search"></i></div>
+            </div>
+            <div class="contenedor-forma-de-pago">
+                <p class="forma-de-pago"> <i class="fas fa-hand-holding-usd"></i>Compra en cuotas y sin tarjetas de crédito</p>
+            </div>           
+        </div>
+        <nav class="main-navbar">
+            <ul>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>                
+            </ul>
+            <ul>
+                <li><a href="/register">Crea tu Cuenta <i class="far fa-id-card"></i></a>
+                </li>
+                <li><a href="/login">Ingresa <i class="fas fa-sign-in-alt"></i>
+                </a></li>
+                <li><a href="#">Mis Compras <i class="fas fa-shopping-basket"></i>
+                </a></li>                
+            </ul>
+        </nav>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>      
+    <section class="banner">
+        <img src="/img/img-home-banner.jpg" alt="banner">
+    </section>     
+    <main>         
+        <form action="/register.html" method="get" class="formulario">            
+
+            <div class="formulario-estilo">
+                <label for="nu"></label>
+                <input type="text" name="usuario" id="nu" placeholder="Nombre de Usuario" class="estilo-input">
+            </div>         
+
+            <div class="formulario-estilo">
+                <label for="contraseña"></label>
+                <input type="password" name="password" id="contraseña" placeholder="Contraseña" class="estilo-input">
+            </div>            
+
+            <div>
+                <button type="submit" class="boton-formulario">Enviar</button>
+            </div>
+        </form>
+    </main>    
+      
     <footer>
         <section class="articulos">
             <i class="fas fa-credit-card"></i>

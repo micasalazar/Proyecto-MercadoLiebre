@@ -49,74 +49,84 @@
         <form action="/register.html" method="get" class="formulario">
 
             <div class="formulario-estilo">
-                <label for="na">Nombre y Apellido</label>
-                <input type="text" name="nombre" id="na" placeholder="Nombre y Apellido">
+                <label for="na"></label>
+                <input type="text" name="nombre" id="na" placeholder="Nombre y Apellido" class="estilo-input">
             </div>
 
             <div class="formulario-estilo">
-                <label for="nu">Nombre de Usuario</label>
-                <input type="text" name="usuario" id="nu" placeholder="Nombre de Usuario">
+                <label for="nu"></label>
+                <input type="text" name="usuario" id="nu" placeholder="Nombre de Usuario" class="estilo-input">
             </div>
 
             <div class="formulario-estilo">
-                <label for="fn">Fecha de Nacimiento</label>
-                <input type="date" name="fecha" id="fn" placeholder="Fecha de Nacimiento">
+                <h4 class="titular-formulario">Fecha de Nacimiento</h4>
+                <label for="fn"></label>
+                <input type="date" name="fecha" id="fn" placeholder="Fecha de Nacimiento" class="estilo-input">
             </div>
 
             <div class="formulario-estilo">
-                <label for="domicilio">Domicilio</label>
-                <input type="text" name="domicilio" id="domicilio">
+                <label for="domicilio"></label>
+                <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" class="estilo-input">
             </div>
 
-            <div class="formulario-estilo">
-                <label for="comprador">Comprador</label>
-                <input type="radio" name="perfil" value="comprador" id="comprador">
-            </div>
+            <div class="formulario-estilo">                
+                <h4 class="titular-formulario">Perfil del Usuario</h4>
+                <div class="estilo-selector-de-opcion">
+                    <input type="radio" name="perfil" value="comprador" id="comprador">                
+                    <label for="comprador">Comprador</label>
+                </div>
+                <div class="estilo-selector-de-opcion" >
+                    <input type="radio" name="perfil" value="vendedor" id="vendedor">
+                    <label for="vendedor">Vendedor</label>
+                </div>                
+            </div>  
 
-            <div class="formulario-estilo">
-                <label for="vendedor">Vendedor</label>
-                <input type="radio" name="perfil" value="vendedor" id="vendedor">
-            </div>
-
-            <div class="formulario-estilo">
-                <h4>Categoria de Interés</h4>
-                <label for="electro">Electro</label>
-                <input type="checkbox" name="categoriaDeInteres" value="electro" id="electro">
+                <h4 class="titular-formulario">Categoria de Interés</h4>
+                <div class="estilo-selector-de-opcion">
+                    <input type="checkbox" name="categoriaDeInteres" value="electro" id="electro">
+                    <label for="electro">Electro</label>
+                </div>
+               
+                <div class="estilo-selector-de-opcion">
+                    <input type="checkbox" name="categoriaDeInteres" value="moda" id="moda">    
+                    <label for="moda">Moda</label>
+                </div>
+                <div class="estilo-selector-de-opcion">
+                    <input type="checkbox" name="categoriaDeInteres" value="hogar" id="hogar">
+                    <label for="hogar">Hogar</label>
+                </div>
+                <div class="estilo-selector-de-opcion">
+                    <input type="checkbox" name="categoriaDeInteres" value="jugueteria" id="jugueteria">
+                    <label for="jugueteria">Juguetería</label>
+                </div>
                 
-                <label for="moda">Moda</label>
-                <input type="checkbox" name="categoriaDeInteres" value="moda" id="moda">
-                
-                <label for="hogar">Hogar</label>
-                <input type="checkbox" name="categoriaDeInteres" value="hogar" id="hogar">
-                
-                <label for="jugueteria">Juguetería</label>
-                <input type="checkbox" name="categoriaDeInteres" value="jugueteria" id="jugueteria">
-
-                <label for="vidaSana">Vida Sana</label>
-                <input type="checkbox" name="categoriaDeInteres" value="vidaSana" id="vidaSana">
+                <div class="estilo-selector-de-opcion">
+                    <input type="checkbox" name="categoriaDeInteres" value="vidaSana" id="vidaSana">
+                    <label for="vidaSana">Vida Sana</label>
+                </div>
                 
             </div>  
 
             <div class="formulario-estilo">
-                <label for="fotoDeUsuario">Foto de Usuario</label>
+                <label for="fotoDeUsuario"></label>
                 <input type="file" name="fotoDeUsuario" id="fotoDeUsuario">
             </div>
 
             <div class="formulario-estilo">
-                <label for="contraseña">Contraseña</label>
-                <input type="password" name="password" id="contraseña">
+                <label for="contraseña"></label>
+                <input type="password" name="password" id="contraseña" placeholder="Contraseña" class="estilo-input">
             </div>
 
             <div class="formulario-estilo">
-                <label for="confirmar">Confirmar Contraseña</label>
-                <input type="password" name="confirmar" id="confirmar">
+                <label for="confirmar"></label>
+                <input type="password" name="confirmar" id="confirmar" placeholder="Confirmar Contraseña" class="estilo-input">
             </div>
 
             <div>
-                <button type="submit">Enviar</button>
+                <button type="submit" class="boton-formulario">Enviar</button>
             </div>
             <div>
-                <button type="reset">Borrar</button>
+                <button type="reset"class="boton-formulario">Borrar</button>
             </div>
 
         </form>
